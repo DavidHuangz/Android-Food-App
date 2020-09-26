@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.project2_finalapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="EatXplore"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".DetailsSweetsActivity"
+            android:label="SweetsDetails"
+            android:theme="@style/SweetsActivityTheme"
+            android:parentActivityName=".SweetsActivity" />
+        <activity
+            android:name=".DetailsSavouryActivity"
+            android:label="SavouryDetails"
+            android:theme="@style/SavouryActivityTheme"
+            android:parentActivityName=".SavouryActivity" />
+        <activity
+            android:name=".DetailsDrinksActivity"
+            android:label="DrinksDetails"
+            android:theme="@style/DrinksActivityTheme"
+            android:parentActivityName=".DrinksActivity" />
+        <activity
+            android:name=".DrinksActivity"
+            android:label="Drinks"
+            android:theme="@style/DrinksActivityTheme" />
+        <activity
+            android:name=".SavouryActivity"
+            android:label="Savoury"
+            android:theme="@style/SavouryActivityTheme" />
+        <activity
+            android:name=".SweetsActivity"
+            android:label="Sweets"
+            android:theme="@style/SweetsActivityTheme" />
+        <activity
+            android:name=".SearchActivity"
+            android:label="Search"
+            android:theme="@style/SearchTheme" />
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

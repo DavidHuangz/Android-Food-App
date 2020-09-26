@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsSavouryActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".DetailsSavouryActivity">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/ViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="200sp"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/SavouryImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/ViewPager"
+            android:layout_alignParentStart="true"
+            android:layout_margin="16dp"
+            android:contentDescription="image of Savoury"
+            android:scaleType="centerCrop"
+            android:transitionName="foodImage"
+            app:srcCompat="@drawable/savoury1" />
+
+        <TextView
+            android:id="@+id/SavouryPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/SavouryName"
+            android:layout_alignTop="@id/SavouryImage"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="61dp"
+            android:layout_marginBottom="67dp"
+            android:layout_toEndOf="@+id/SavouryImage"
+            android:text="Price: $$$"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/SavouryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/SavouryImage"
+            android:layout_alignStart="@id/SavouryImage"
+            android:text="Big Title"
+            android:textColor="	#000000"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/SavouryText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/SavouryName"
+            android:layout_alignStart="@id/SavouryImage"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/SavouryText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/SavouryText1"
+            android:layout_alignStart="@id/SavouryImage"
+            android:layout_marginTop="16sp"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+</ScrollView>

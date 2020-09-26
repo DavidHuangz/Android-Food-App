@@ -1,0 +1,95 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    ///////////////////////////////// Custom styles ////////////////////////////////////////////////
+
+    // Sweets
+    <style name="SweetsActivityTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/appBar_Sweets</item>
+        <item name="colorPrimaryDark">@color/appBar_Sweets</item>
+        <item name="android:windowAnimationStyle">@style/SlideHorizontalActivityAnimation</item>
+    </style>
+
+    // Savoury
+    <style name="SavouryActivityTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/appbar_Savoury</item>
+        <item name="colorPrimaryDark">@color/appbar_Savoury</item>
+        <item name="android:windowAnimationStyle">@style/SlideHorizontalActivityAnimation</item>
+    </style>
+
+    // Drinks
+    <style name="DrinksActivityTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/appBar_Drinks</item>
+        <item name="colorPrimaryDark">@color/appBar_Drinks</item>
+        <item name="android:windowAnimationStyle">@style/SlideHorizontalActivityAnimation</item>
+    </style>
+
+    // Search
+    <style name="SearchTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/appBar_Search</item>
+        <item name="colorPrimaryDark">@color/appBar_Search</item>
+        <item name="android:windowAnimationStyle">@style/SlideVerticalActivityAnimation</item>
+    </style>
+
+    <style name="SlideHorizontalActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+    <style name="SlideVerticalActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_top</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_bottom</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_top</item>
+    </style>
+
+    // Main Text style
+    <style name="MainTextStyle" parent="AppTheme">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">48sp</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1.5</item>
+        <item name="android:shadowDy">1.3</item>
+        <item name="android:shadowRadius">1.6</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">379dp</item>
+        <item name="android:layout_height">150dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_margin">16dp</item>
+    </style>
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+    <style name="CategoryCardStyle">
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="cardElevation">8dp</item>
+    </style>
+
+    <style name="CategoryTextViews">
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_margin">16dp</item>
+        <item name="android:textColor">#F5F5F5</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>
